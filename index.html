@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dinç — Gizlilik Politikası</title>
+<meta name="description" content="Dinç antrenman takip uygulamasının gizlilik politikası.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #17171a; --muted: #5b5b66; --line: #e4e4ea;
+    --accent: #4d6b00; --card: #f6f7f2;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0a0a0b; --fg: #ececf0; --muted: #a0a0ab; --line: #26262c;
+            --accent: #d7ff3e; --card: #141416; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg);
+         font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 16px 64px; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .logo { width: 40px; height: 40px; border-radius: 10px; background: #0a0a0b;
+          display: grid; place-items: center; color: #d7ff3e; font-weight: 800; font-size: 22px; }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; }
+  h2 { font-size: 19px; margin: 36px 0 8px; }
+  p, li { color: var(--fg); }
+  .meta { color: var(--muted); font-size: 14px; margin: 4px 0 24px; }
+  .summary { background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+             padding: 16px 18px; }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  a { color: var(--accent); }
+  nav { display: flex; gap: 16px; flex-wrap: wrap; font-size: 15px; margin: 0 0 8px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">D</div>
+    <h1>Dinç Gizlilik Politikası</h1>
+  </header>
+  <p class="meta">Yürürlük tarihi: 15 Ekim 2026</p>
+  <nav><a href="hesap-sil.html">Hesabımı nasıl silerim?</a></nav>
+
+  <p>Dinç, Çağrı Çelikkol tarafından geliştirilen bir antrenman takip uygulamasıdır. Bu politika hangi bilgilerin işlendiğini, nerede durduğunu ve kimlerin görebildiğini açıklar.</p>
+
+  <p class="summary"><strong>Kısaca:</strong> Hesap açmadan kullanırsan tüm bilgilerin yalnızca telefonunda kalır. Hesap açarsan antrenmanların ve rutinlerin hesabına yedeklenir; vücut ölçülerin ve profil bilgilerin yine yalnızca telefonunda kalır. Reklam ve analitik yoktur; verilerin satılmaz.</p>
+
+  <h2>1. Hesapsız kullanım</h2>
+  <p>Girdiğin profil bilgileri (cinsiyet, doğum tarihi, boy), vücut ölçüleri ve antrenman kayıtları yalnızca telefonundaki uygulama veritabanında tutulur. Biz bunlara erişemeyiz. Uygulamayı silersen hepsi silinir.</p>
+
+  <h2>2. Hesap açarsan işlenen bilgiler</h2>
+  <ul>
+    <li><strong>Hesap bilgileri:</strong> e-posta adresin, şifren ve uygulamada görünen adın. Şifren bizim de göremeyeceğimiz şekilde, tek yönlü şifrelenmiş olarak saklanır.</li>
+    <li><strong>Eşitlenen antrenman verileri:</strong> rutinler, antrenmanlar, egzersizler, setler, ağırlık ve tekrarlar, RIR değerleri, kardiyo süreleri ve antrenman notların.</li>
+    <li><strong>Bildirim bilgileri:</strong> salon bildirimlerini alabilmen için telefonunun bildirim kimliği (push token), cihaz platformu (Android/iOS) ve bildirim tercihlerin.</li>
+    <li><strong>Teknik bilgiler:</strong> sunucuya her bağlantıda IP adresin ve bağlantı zamanı güvenlik kayıtlarına düşer.</li>
+  </ul>
+  <p><strong>Eşitlenmeyenler:</strong> vücut ölçüleri (kilo, yağ oranı, çevre ölçüleri), profil bilgileri ve uygulama ayarları. Bunlar yalnızca telefonunda kalır.</p>
+
+  <h2>3. Salona katılırsan</h2>
+  <p>Salon koduyla bir spor salonuna katılırsan salon üyeliğin (salon, rolün, üyelik bitiş tarihin, katılım tarihin) ve grup derslerine katılım bildirimlerin kaydedilir. Bu bilgileri salonun yöneticileri ve hocaları görebilir. Bir derse katılacağını söylersen diğer üyeler yalnızca kişi sayısını görür; adını yalnızca salonun yöneticileri ve hocaları görür.</p>
+  <p>Salon duyurularını ve senin katılacağın derslerdeki iptal ve değişiklikleri telefon bildirimi olarak alırsın; bunları Ayarlar'dan kapatabilirsin.</p>
+  <p>Salon yöneticisi salonun logosunu yükleyebilir; logolar herkese açık bir adreste saklanır ve kişisel veri içermemelidir.</p>
+  <p>Antrenmanlarının hocanla paylaşılması ayrı bir izinle açılır; izin vermedikçe hocan antrenmanlarını göremez. Salon üyeliğine ilişkin ayrıntılar için salonun aydınlatma metnine bak.</p>
+
+  <h2>4. Bilgilerin nerede saklanır ve kimler işler</h2>
+  <ul>
+    <li><strong>Supabase Inc.:</strong> Hesap, eşitlenen antrenmanlar, salon üyeliği, bildirim bilgileri ve salon logoları Supabase'in Frankfurt (Avrupa Birliği) sunucularında saklanır. Bu, yurt dışına aktarım sayılır.</li>
+    <li><strong>Google:</strong> Giriş, doğrulama ve şifre sıfırlama kodları Gmail üzerinden e-postana gönderilir. Android'de telefon bildirimleri Google'ın Firebase Cloud Messaging hizmetiyle iletilir; bu sırada bildirim kimliği ve bildirim metni Google'ın sunucularından geçer.</li>
+    <li><strong>Expo (650 Industries, Inc., ABD):</strong> Uygulama açılışta güncelleme olup olmadığını kontrol eder; bu istekte uygulama sürümü, platform bilgisi ve IP adresin iletilir. Telefon bildirimleri de Expo'nun bildirim hizmeti üzerinden gönderilir; bu sırada bildirim kimliği ve bildirim metni iletilir. Antrenman verisi iletilmez.</li>
+    <li><strong>GitHub:</strong> Egzersiz görselleri GitHub sunucularından indirilir.</li>
+  </ul>
+
+  <h2>5. Güvenlik</h2>
+  <p>Sunucuyla tüm bağlantılar şifrelidir. Sunucudaki her kayıt sahibine bağlıdır ve erişim kuralları bir kullanıcının başkasının verisini görmesini engeller. Uygulamanın yedek dosyaları şifrelenmez; yedek aldığında dosyayı güvendiğin bir yerde sakla.</p>
+
+  <h2>6. Saklama süresi</h2>
+  <p>Hesabını silene kadar saklanır. Telefonda sildiğin bir antrenman, diğer cihazlarında da silinebilmesi için sunucuda "silindi" işaretiyle tutulur. Hesabını sildiğinde hesabın, salon üyeliğin, bildirim bilgilerin ve sunucudaki tüm antrenman verilerin kalıcı olarak silinir; varsa sunucu yedeklerinden en geç 30 gün içinde silinir.</p>
+
+  <h2>7. İzinler</h2>
+  <ul>
+    <li><strong>Bildirimler:</strong> dinlenme süresi, ders hatırlatmaları, salon duyuruları ve ders değişiklikleri için.</li>
+    <li><strong>Tam zamanlı alarm (Android):</strong> dinlenme süresi bildiriminin zamanında gelmesi için.</li>
+    <li><strong>Fotoğraf seçme:</strong> yalnızca salon yöneticileri, salon logosu yüklerken kendi seçtikleri tek bir görsel için kullanır. Uygulama galerine toplu erişmez.</li>
+  </ul>
+  <p>Uygulama konum, kamera, mikrofon veya rehbere erişmez.</p>
+
+  <h2>8. Hakların</h2>
+  <ul>
+    <li>Verilerini uygulama içinden düzenleyebilir, silebilir ve yedek alarak dışa aktarabilirsin.</li>
+    <li><strong>Ayarlar → Hesap ve salon → Hesabımı sil</strong> ile hesabını ve sunucudaki verilerini kalıcı olarak silebilirsin. Uygulamaya erişemiyorsan <a href="hesap-sil.html">bu sayfadaki</a> yolu izle.</li>
+    <li>KVKK kapsamındaki diğer hakların için <a href="mailto:[iletisim-epostasi]">[iletisim-epostasi]</a> adresine yaz; talepler en geç 30 gün içinde ücretsiz yanıtlanır.</li>
+  </ul>
+
+  <h2>9. Çocuklar</h2>
+  <p>Dinç 18 yaş ve üzeri içindir ve bilerek çocuklardan bilgi toplamaz.</p>
+
+  <h2>10. Değişiklikler</h2>
+  <p>Bu politika değişirse güncel sürüm bu sayfada yayınlanır ve uygulama içinde bildirilir. Verilerinin yeni bir amaçla işlenmesini gerektiren değişikliklerde onayın ayrıca istenir.</p>
+
+  <h2>11. İletişim</h2>
+  <p>Çağrı Çelikkol — <a href="mailto:[iletisim-epostasi]">[iletisim-epostasi]</a></p>
+
+  <footer>Dinç · Antrenman takip uygulaması</footer>
+</main>
+</body>
+</html>
